@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>basic data types</title>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+
+
+      <p id="boolean">Display the value of (10 > 9):</p>
+  <button type="button"id="click" name="button">Click here</button>
+
+  <p id= "null">Objects can be emptied by setting the value to <b>null</b>.</p>
+
+
+  <p id="undefined">The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+  <h2> new Date</h2>
+  <p id="date"></p>
+    <script>
+    // array
+    // JavaScript arrays are used to store multiple values in a single variable.
+    let pizza=["base","chicken","cheese","steak","beef"]
+    console.log(pizza);
+  ///////////////////////////////////////////////////////////
+  // object
+  // Objects are variables too. But objects can contain many values.
+  let shoes = {type:"soviet", color:"red", size:"6"};
+  console.log(shoes);
+  ////////////////////////////////////////////////
+  // strings
+  // JavaScript strings are used for storing and manipulating text.
+  let name = "Reece";
+  let surname = "Jefthas";
+  console.log(name);
+  console.log(surname);
+  // numbers
+  // JavaScript has only one type of number. Numbers can be written with or without decimals.
+  let x = 10;
+  let y = 20;
+  let z = x + y;
+  console.log(x+y);
+  // boolean
+  // A JavaScript Boolean represents one of two values: true or false.
+    document.getElementById("click").onclick=function(){
+    document.getElementById("boolean").innerHTML=(10>9);
+  }
+
+  // The typeof operator returns a string indicating the type of the unevaluated operand.
+  // null
+  // The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values.
+  let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+  person = null;
+  document.getElementById("null").innerHTML = typeof person;
+  console.log(person);
+
+
+  // undefined
+  // In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined.
+
+  let car;
+  document.getElementById("undefined").innerHTML =
+   typeof car;
+  console.log(car);
+
+  // date
+  // By default, JavaScript will use the browser's time zone and display a date as a full text string:
+  let date = new Date();
+  document.getElementById("date").innerHTML = date;
+    </script>
+    </body>
+    </html>
